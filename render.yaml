@@ -15,6 +15,8 @@ services:
         sync: false
       - key: CORS_ORIGINS
         sync: false
+      - key: CORS_ORIGIN_REGEX
+        value: https://stockflow-[a-z0-9-]+-bhavikkumar189-5894s-projects\.vercel\.app
       - key: ADMIN_API_KEY
         generateValue: true
       - key: CUSTOMER_TOKEN_SECRET
