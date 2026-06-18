@@ -3,6 +3,14 @@
 A full-stack inventory and order management system built with FastAPI, React,
 PostgreSQL, and Docker.
 
+## Live links
+
+- Frontend: https://stockflow-bay.vercel.app
+- Backend API: https://stockflow-api-xhek.onrender.com
+- API documentation: https://stockflow-api-xhek.onrender.com/docs
+- Docker image: https://hub.docker.com/r/bhavik909/stockflow-api
+- GitHub repository: https://github.com/bhavikkumar189-k/stockflow
+
 ## Features
 
 - Separate customer storefront and protected admin portal
