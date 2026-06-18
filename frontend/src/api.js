@@ -1,4 +1,9 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const configuredApiUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, "");
+const API_URL =
+  import.meta.env.PROD &&
+  (!configuredApiUrl || configuredApiUrl.includes("localhost"))
+    ? "https://stockflow-api-xhek.onrender.com"
+    : configuredApiUrl || "http://localhost:8000";
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_URL}${path}`, {
